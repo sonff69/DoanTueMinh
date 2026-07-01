@@ -221,32 +221,33 @@
         </div>
       </div>
 
-      <!-- Avatar & Graphic Art -->
+      <!-- Avatar & Polaroid Stack -->
       <div class="lg:col-span-5 flex justify-center lg:justify-end relative scroll-fade opacity-0 translate-y-8 transition-all duration-700 ease-out" style="transition-delay: 200ms;">
-        <div class="relative w-72 h-72 md:w-80 md:h-80">
-          <!-- Concentric Outer Solid Ring -->
-          <div class="absolute inset-0 rounded-full border border-rose-100/60 scale-125"></div>
-          <!-- Concentric Inner Dashed Animated Ring -->
-          <div class="absolute inset-0 rounded-full border border-dashed border-rose-200 animate-pulse-soft"></div>
+        <div class="relative w-80 h-[460px] flex items-center justify-center">
           
+          <!-- Concentric Inner Dashed Animated Ring behind the stack -->
+          <div class="absolute inset-0 rounded-full border border-dashed border-rose-200/80 animate-pulse-soft scale-90"></div>
+          
+          <!-- Polaroid Photo 1 (Hinh_1.jpg) - Tilted Left -->
+          <div class="absolute w-56 md:w-60 transition-all duration-500 hover:scale-105 hover:rotate-0 hover:z-30 transform -rotate-6 translate-x-[-24px] -translate-y-6 z-10 cursor-pointer">
+            <img src="Hinh_1.jpg" alt="Đoàn Tuệ Minh Portrait 1" class="w-full h-auto rounded-xl shadow-xl hover:shadow-2xl border border-stone-200/40 bg-white">
+          </div>
+          
+          <!-- Polaroid Photo 2 (Hinh_2.jpg) - Tilted Right -->
+          <div class="absolute w-56 md:w-60 transition-all duration-500 hover:scale-105 hover:rotate-0 hover:z-30 transform rotate-6 translate-x-[24px] translate-y-6 z-20 cursor-pointer">
+            <img src="Hinh_2.jpg" alt="Đoàn Tuệ Minh Portrait 2" class="w-full h-auto rounded-xl shadow-xl hover:shadow-2xl border border-stone-200/40 bg-white">
+          </div>
+
           <!-- Decorative Floating Badges -->
-          <div class="absolute -top-4 -right-2 bg-white px-3.5 py-2 rounded-2xl shadow-md border border-stone-100 flex items-center gap-2 animate-float z-20">
+          <div class="absolute -top-4 -right-2 bg-white px-3.5 py-2 rounded-2xl shadow-md border border-stone-100 flex items-center gap-2 animate-float z-30">
             <span class="w-2.5 h-2.5 bg-mint-400 rounded-full"></span>
             <span class="text-xs font-bold text-stone-600">ULISer 🎒</span>
           </div>
-          <div class="absolute bottom-6 -left-6 bg-white px-3.5 py-2 rounded-2xl shadow-md border border-stone-100 flex items-center gap-2 animate-float-slow z-20">
+          <div class="absolute -bottom-4 -left-4 bg-white px-3.5 py-2 rounded-2xl shadow-md border border-stone-100 flex items-center gap-2 animate-float-slow z-30">
             <span class="w-2.5 h-2.5 bg-sky-400 rounded-full"></span>
             <span class="text-xs font-bold text-stone-600">AI Native 💻</span>
           </div>
-          <div class="absolute bottom-1/2 -right-8 bg-white p-2.5 rounded-full shadow-md border border-stone-100 animate-float-fast z-20">
-            <span class="text-lg">🇨🇳</span>
-          </div>
-
-          <!-- Main Circle Portrait Frame -->
-          <div class="w-full h-full rounded-full overflow-hidden border-4 border-white shadow-2xl relative z-10 bg-rose-50">
-            <!-- Warm-toned aesthetic stock portrait matching cottagecore/tech design -->
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&h=400&q=80" alt="Đoàn Tuệ Minh Portrait" class="w-full h-full object-cover">
-          </div>
+          
         </div>
       </div>
     </div>
@@ -258,7 +259,6 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
       </svg>
     </div>
-  </nav>
   </section>
 
   <!-- Skills & Stats Section -->
